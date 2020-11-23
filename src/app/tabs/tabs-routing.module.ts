@@ -7,6 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: TabsPage
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'conf',
+    loadChildren: () => import('./conf/conf.module').then( m => m.ConfPageModule)
   }
 ];
 
