@@ -1,11 +1,50 @@
-<ion-header>
-  <ion-toolbar color="primary">
+<Ionpage>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Configurações
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <!--Imagem do perfil-->
+    <h1>
+    <ion-avatar>
+      <img src="https://randomuser.me/api/portraits/men/42.jpg">
+    </ion-avatar>
+  </h1>
+    <!--Dados do usuario-->
+    <h1>
+    <ion-title>
+      Dados Pessoais 
+    </ion-title>
+  </h1>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input aria-placeholder="" type="text"></ion-input>
+    </ion-item>
 
-    <ion-title>Configuração</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
+    <ion-item>
+      <ion-label>Celular</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
 
-<ion-content>
+     <h1>
+    <ion-title> Conta iBooze </ion-title>
+    </h1>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-</ion-content>
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button routerLink="/home" expand="block">Sair</ion-button>
+    <ion-button routerLink="/tabs/home" expand="block">Salvar</ion-button>
+
+  </ion-content>
+</Ionpage>
+
