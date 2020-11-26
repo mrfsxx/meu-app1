@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--Imagem do perfil-->
+  <ion-card>
+    <iom-card-header>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-avatar><img src="https://randomuser.me/api/portraits/men/42.jpg" alt=""></ion-avatar>
+        </ion-col>
+      <ion-col>
+    <ion-card-title>Inserir foto</ion-card-title>
+  </ion-col>
+  </ion-row>
+  </iom-card-header>
+  </ion-card>
+  <!--Dados do usuario-->
+  <h5>Dados para Cadastro</h5>
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input aria-placeholder="" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Celular</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-button routerLink="/tabs/home" expand="block">Salvar</ion-button>
+  <ion-button routerLink="/home" expand="block">Cancelar</ion-button>
+</ion-content>
