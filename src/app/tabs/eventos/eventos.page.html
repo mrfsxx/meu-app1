@@ -6,46 +6,63 @@
     <ion-title>Eventos</ion-title>
   </ion-toolbar>
 </ion-header>
-
+<Ion-item>
+  <ion-icon name="calendar" slot="start"></ion-icon>
+  <Ion-input placeholder="Procure por um evento"></Ion-input>
+  <ion-icon name="arrow-forward" slot="end"></ion-icon>
+</Ion-item>
 
 <ion-content>
-  <Ion-item>
-    <ion-icon name="search" slot="start"></ion-icon>
-    <Ion-input placeholder="Procure por um evento"></Ion-input>
-    <ion-icon name="arrow-forward" slot="end"></ion-icon>
-  </Ion-item> 
 
 
-  <ion-card>
-    <img src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-    <ion-row class="ion-align-itens-center">
-      <ion-col>
-    <ion-card-header>
-      <ion-card-subtitle>Sexta Feira - 13/11/2020</ion-card-subtitle>
-      <ion-card-title>Campeonato de League of Legends</ion-card-title>
-    </ion-card-header>
-  </ion-col>
-    <ion-col>
-      <ion-row>
-    <ion-avatar class="daily-scenary-avatar">
-      <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="">
-    </ion-avatar>
-    <ion-avatar class="daily-scenary-avatar">
-      <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="">
-    </ion-avatar>
-    <ion-avatar class="daily-scenary-avatar">
-      <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="">
-    </ion-avatar>
-      </ion-row>
-  </ion-col>
-    </ion-row>  
-    <ion-card-content>
-      Monte seu time e se inscreva no campeonato online que irá acontecer durante o próximo mês!
-    </ion-card-content>
-  </ion-card>
+  <ion-content class="ion-passing">
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
       <ion-fab-button>
         <ion-icon name="add"></ion-icon>
       </ion-fab-button>
     </ion-fab>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-row class="ion-align-items-center">
+        <ion-col size='auto'>
+      <ion-avatar>
+      
+        <img src="https://randomuser.me/api/portraits/women/30.jpg" />
+      
+      </ion-avatar>
+    </ion-col>
+      <ion-col>
+      <ion-card-title>Miranda Dias</ion-card-title>
+      <ion-card-subtitle>Sexta Feira - 15/12/2020</ion-card-subtitle>
+      <ion-card-title>Campeonato de League of Legends</ion-card-title>
+    </ion-col>
+    </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>       Monte seu time e se participe do campeonato online que irá acontecer durante o próximo mês! </strong>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-row class="ion-align-items-center">
+        <ion-col size='auto'>
+      <ion-avatar>
+      
+        <img src="https://randomuser.me/api/portraits/women/77.jpg" />
+      
+      </ion-avatar>
+    </ion-col>
+      <ion-col>
+      <ion-card-title>Ana Lins </ion-card-title>
+      <ion-card-subtitle>Sexta Feira - 05/12/2020</ion-card-subtitle>
+      <ion-card-title>Campeonato Smash Bros / Kids</ion-card-title>
+    </ion-col>
+    </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>       Participe do campeonato online que irá acontecer semana que vem! </strong>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -7,7 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
-
+type Task= {
+name: string,
+completed: boolean
+};
 @NgModule({
   imports: [
     CommonModule,
@@ -17,4 +20,18 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+  public tasks: Task[] = [
+  {name: 'Learn Ionic', completed:false},
+  {name:'Buy milk', completed: true}
+
+  ];
+  public newTaskName ='';
+  public addTask(){
+    this.tasks.push({
+     name:this.newTaskName,
+     completed: false
+    })
+    this.newTaskName = '';
+  }
+}

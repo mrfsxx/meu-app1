@@ -21,9 +21,14 @@ const routes: Routes = [
       path: 'conf',
       loadChildren: () => import('./conf/conf.module').then( m => m.ConfPageModule)
      
-      }
+      },
+      {
+        path: 'amigues',
+        loadChildren: () => import('./amigues/amigues.module').then( m => m.AmiguesPageModule)
+      },
     ]
   },
+
 ];
 
 @NgModule({
