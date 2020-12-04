@@ -9,4 +9,13 @@
 
 <ion-content>
 <app-contact-form [contact]="emptyContact" (save)="handleSave()"></app-contact-form>
+
+<ion-button routerLink="/tabs/home" expand="block" (click)="this.save.emit()">
+  <ion-icon slot="start" name="add"></ion-icon>
+  Enviar
+</ion-button>
+<ion-button routerLink="/tabs/home" expand="block">
+  Cancelar
+
+</ion-button>
 </ion-content>

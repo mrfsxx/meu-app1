@@ -3,13 +3,6 @@
     <ion-label position="stacked">Nos conte algo:</ion-label>
     <ion-textarea></ion-textarea>
     <ion-input type="text" [(ngModel)]="contact.text" ></ion-input>
-  
+
   </ion-item>
-  <ion-button expand="block" (click)="this.save.emit()">
-    <ion-icon slot="start" name="add"></ion-icon>
-    Enviar
-  </ion-button>
-  <ion-button routerLink="/tabs/home" expand="block">
-    Cancelar
-  </ion-button>
 </ion-list>
