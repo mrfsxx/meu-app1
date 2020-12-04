@@ -3,109 +3,26 @@
     <ion-title>iBooze</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="ion-passing">
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  <h1>
-
-  <ion-chip outline color="primary"> 
-
-    <ion-label>Zelda</ion-label>
-    <ion-icon name="close-circle"></ion-icon>
-  </ion-chip>
-  <ion-chip outline color="primary">
-    <ion-label>Mario</ion-label>
-    <ion-icon name="close-circle"></ion-icon>
-  </ion-chip>
-  <ion-chip outline color="primary">
-    <ion-label>Smash Bros</ion-label>
-    <ion-icon name="close-circle"></ion-icon>
-  </ion-chip>
-  </h1>
-<ion-card>
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let c of contacts">
+  <ion-avatar slot="start">
+    <img [src]="'https://github.com/'+c.username+'.png'" alt="">
+  </ion-avatar>
   <ion-card-header>
     <ion-row class="ion-align-items-center">
-      <ion-col size='auto'>
-    <ion-avatar>
-    
-      <img src="https://randomuser.me/api/portraits/men/2.jpg" />
-    
-    </ion-avatar>
-  </ion-col>
-    <ion-col>
-    <ion-card-title>Links</ion-card-title>
-  </ion-col>
-  </ion-row>
-  </ion-card-header>
-  <ion-card-content>
-    <strong>  Eu decido jogar Third Strike um pouquinho e aí o cara dá 30 taunts por partida, fica 5-4 pra mim e ele ainda me chama de "noob".</strong>
-  </ion-card-content>
-</ion-card>
+      <ion-col size="auto">
+  <h2>{{c.name}}</h2>
+  {{c.text}}
+</ion-col>
+</ion-row>
+</ion-card-header>
+</ion-item>
+</ion-list>
 
-
-<ion-card>
-  <ion-card-header>
-    <ion-row class="ion-align-items-center">
-      <ion-col size='auto'>
-    <ion-avatar>
-    
-      <img src="https://randomuser.me/api/portraits/men/2.jpg" />
-    
-    </ion-avatar>
-  </ion-col>
-    <ion-col>
-    <ion-card-title>Links</ion-card-title>
-  </ion-col>
-  </ion-row>
-  </ion-card-header>
-  <ion-card-content>
-    <strong>Nossa, hype tá a milhão. Acho que na real que tô mais hypado pro Neo do que pro remake do FFVII. #TWEWY.</strong>
-    
-</ion-card-content>
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-row class="ion-align-items-center">
-      <ion-col size='auto'>
-    <ion-avatar>
-    
-      <img src="https://randomuser.me/api/portraits/women/80.jpg" />
-    
-    </ion-avatar>
-  </ion-col>
-    <ion-col>
-    <ion-card-title>Carol G.</ion-card-title>
- 
-  </ion-col>
-  </ion-row>
-  </ion-card-header>
-  <ion-card-content>
-    <strong>Estou emocionada de finalmente ver esse Patch escrito Shadowbringers e não ser no PS4</strong>
-    
-</ion-card-content>
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-row class="ion-align-items-center">
-      <ion-col size='auto'>
-    <ion-avatar>
-    
-      <img src="https://randomuser.me/api/portraits/women/47.jpg" />
-    
-    </ion-avatar>
-  </ion-col>
-    <ion-col>
-    <ion-card-title>Mizu</ion-card-title>
-  </ion-col>
-  </ion-row>
-  </ion-card-header>
-  <ion-card-content>
-  <strong>Impressionante como qualquer FF clássico teria HORAS de duração a menos se não fosse Random Battle</strong>
-    
-</ion-card-content>
-</ion-card>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button routerLink="/create">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>

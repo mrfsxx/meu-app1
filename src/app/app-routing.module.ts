@@ -26,7 +26,15 @@ const routes: Routes = [
   {
     path: 'contato',
     loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
+  },  {
+    path: 'create',
+    loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
   },
+  {
+    path: 'shared',
+    loadChildren: () => import('./shared/shared.module').then( m => m.SharedPageModule)
+  },
+
 ];
 
 @NgModule({
